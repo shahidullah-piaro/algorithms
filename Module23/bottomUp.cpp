@@ -4,10 +4,8 @@ using namespace std;
 
 int main()
 {
-    //int coutt = 0;
     int n;
     cin>>n;
-    //coutt++;
     int countt = 1;
     while (n > 1)
     {
@@ -19,7 +17,6 @@ int main()
         countt++;
     };
     cout<<countt<<endl;
-    //cout<<coutt<<endl;
     return 0;
 }
 
