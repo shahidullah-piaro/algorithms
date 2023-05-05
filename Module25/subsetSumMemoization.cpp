@@ -16,7 +16,7 @@ int nums[N];
 int dp[N][M];
 
 /*
-6 30
+6 9
 3 34 4 12 5 2
 target = 9
 */
