@@ -1,3 +1,5 @@
+// https://lightoj.com/problem/back-to-underworld
+
 #include <bits/stdc++.h>
 using namespace std;
 vector<int>edges[20005];
@@ -18,7 +20,6 @@ int bipartite()
             s=tn;
             color[s]=1;
             d=d+1;
-            //cout<<s<<"<==1=>>"<<d<<endl;
             q.push(s);
             visited[s]=1;
 
@@ -37,13 +38,11 @@ int bipartite()
                          if(color[edges[fr][k]]==0)
                          {
                              c++;
-                             //cout<<edges[fr][k]<<"<==0=>>"<<c<<endl;
 
                          }
                          else if(color[edges[fr][k]]==1)
                          {
                              d++;
-                             //cout<<edges[fr][k]<<"<==1=>>"<<d<<endl;
                          }
 
                     }
@@ -55,7 +54,6 @@ int bipartite()
 
 
             }
-                //cout<<x<<endl;
                 sum=sum+max(c,d);
         }
 
@@ -70,8 +68,6 @@ int bipartite()
 int main()
 {
     long long int e,p,n,u,v,f,m,t,z,y,tf;
-    //freopen("1009.txt","r",stdin);
-    //freopen("1009out.txt","w",stdout);
     cin>>t;
     for(y=1;y<=t;y++)
     {
@@ -90,12 +86,6 @@ int main()
         bipartite();
 
         cout<<"Case "<<y<<": "<<sum<<endl;
-
-
-
-
-
-
 
     }
 
